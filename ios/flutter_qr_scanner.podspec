@@ -14,6 +14,7 @@ A new Flutter plugin.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   # s.resource     = 'Classes/CodeScan.bundle'
+  s.swift_version = '3.3'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
 

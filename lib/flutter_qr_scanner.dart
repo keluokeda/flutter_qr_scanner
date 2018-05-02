@@ -17,7 +17,6 @@ class FlutterQrScanner {
     final Uint8List data = await _channel.invokeMethod(
         "createQRImageData", {"content": content, "size": size});
 
-
     return data;
   }
 }

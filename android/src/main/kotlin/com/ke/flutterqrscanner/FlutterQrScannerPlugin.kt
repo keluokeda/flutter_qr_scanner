@@ -68,13 +68,13 @@ class FlutterQrScannerPlugin(private val activity: Activity) : MethodCallHandler
                 val content = map["content"] as String
                 val size = map["size"] as Int
                 Observable.just(Pair(content, size)).observeOn(Schedulers.io())
-                        .map({ encodeAsBitmap(it.first, it.second) })
-                        .map({
+                        .map { encodeAsBitmap(it.first, it.second) }
+                        .map {
                             val byteArrayOutputStream = ByteArrayOutputStream()
                             it.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
                             return@map byteArrayOutputStream.toByteArray()
-                        })
-                        .subscribe({ result.success(it) })
+                        }
+                        .subscribe { result.success(it) }
 
             }
             else -> result.notImplemented()
@@ -112,9 +112,12 @@ class FlutterQrScannerPlugin(private val activity: Activity) : MethodCallHandler
 
                 result?.success("")
             }
+
+            return true
         }
 
-        return true
+        //false表示别的也可以处理
+        return false
     }
 
 

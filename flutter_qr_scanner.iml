@@ -35,6 +35,10 @@
       <excludeFolder url="file://$MODULE_DIR$/example/android/gradle/wrapper/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/flutter_app_test_ui/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/flutter_app_test_ui/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/flutter_app_test_ui/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/flutter_app_test_ui/test/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/Flutter/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/Runner.xcodeproj/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/packages" />

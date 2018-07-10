@@ -80,7 +80,7 @@ class QRScanActivity : Activity(), ZXingScannerView.ResultHandler {
     }
 
     fun manualEnter(view: View) {
-        returnResult("manual_enter")
+        returnResult("manual_input")
     }
 
     companion object {

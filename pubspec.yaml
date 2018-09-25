@@ -1,8 +1,11 @@
 name: flutter_qr_scanner
 description: A new Flutter plugin.
-version: 0.0.1
+version: 0.0.2
 author:
 homepage:
+
+environment:
+    sdk: ">=1.19.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -47,5 +50,4 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.io/custom-fonts/#from-packages
-  environment:
-      sdk: ">=1.19.0 <3.0.0"
+
